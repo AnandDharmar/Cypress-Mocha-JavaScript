@@ -1,0 +1,27 @@
+{
+    "name": "cypress-framework",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "clean": "rimraf cypress/reports rimraf public mkdir cypress/reports mkdir cypress/reports/mochareports",
+      "pretest": "npm run allure:clean",
+      "test": "npx cypress run",
+      "combine-reports": "npx mochawesome-merge cypress/reports/mocha/*.json > index.json",
+      "generate-report": "npx marge index.json -f index --reportDir public --assetsDir public/assets --reportPageTitle index.html",
+      "posttest": "npm run combine-reports && npm run generate-report"
+    },
+    "author": "Anand Dharmar",
+    "license": "ISC",
+    "dependencies": {
+      "cypress": "^7.3.0",
+      "fakerator": "0.3.3",
+      "cypress-multi-reporters": "^1.5.0",
+      "mochawesome": "^6.2.2",
+      "mochawesome-merge": "^4.2.0",
+      "mochawesome-report-generator": "^5.2.0",
+      "@shelex/cypress-allure-plugin": "2.5.1",
+      "allure-commandline":"2.13.8"
+    }
+  }
+  

@@ -1,0 +1,625 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 13,
+    "passes": 9,
+    "pending": 0,
+    "failures": 4,
+    "start": "2021-07-17T00:17:05.633Z",
+    "end": "2021-07-17T00:22:44.144Z",
+    "duration": 89055,
+    "testsRegistered": 13,
+    "passPercent": 69.23076923076923,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ae4a3c22-5a9e-47ee-a81e-6617221026c8",
+      "title": "",
+      "fullFile": "cypress/integration/mocha_api/02_postGenre.spec.js",
+      "file": "cypress/integration/mocha_api/02_postGenre.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "41b58b5b-0e3f-498f-9c33-46a2ba41769e",
+          "title": "A simple POST request against an API to add a movie genre",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "POST -- Successful API POST request",
+              "fullTitle": "A simple POST request against an API to add a movie genre POST -- Successful API POST request",
+              "timedOut": null,
+              "duration": 188,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'POST',\n  url: endpoint,\n  failOnStatusCode: false,\n  body: this.data.postRequest\n}).then(response => {\n  expect(response.status).to.eq(201);\n  expect(response.body).to.not.be.null;\n  expect(response.body).property('name').to.equal(this.data.postRequest.name);\n});",
+              "err": {},
+              "uuid": "4cd2c040-973b-4af0-bee9-f725622f8fb1",
+              "parentUUID": "41b58b5b-0e3f-498f-9c33-46a2ba41769e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4cd2c040-973b-4af0-bee9-f725622f8fb1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 188,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bdf1f6f6-8f7e-49e2-bc81-1ab2aa44a3c0",
+      "title": "",
+      "fullFile": "cypress/integration/mocha_api/03_putGenre.spec.js",
+      "file": "cypress/integration/mocha_api/03_putGenre.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "517caf61-326a-44e4-be9d-e0cfd393455d",
+          "title": "A simple PUT request against an API to update a movie genre",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "PUT -- Successful API PUT request",
+              "fullTitle": "A simple PUT request against an API to update a movie genre PUT -- Successful API PUT request",
+              "timedOut": null,
+              "duration": 107,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'PUT',\n  url: specificEndpoint,\n  failOnStatusCode: false,\n  body: this.data.putRequest\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.not.be.null;\n  expect(response.body).property('name').to.equal(this.data.putRequest.name);\n});",
+              "err": {},
+              "uuid": "a7f794f7-cbc0-4ae3-b366-19aefac5c9b7",
+              "parentUUID": "517caf61-326a-44e4-be9d-e0cfd393455d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a7f794f7-cbc0-4ae3-b366-19aefac5c9b7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 107,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e837b8d0-1ff0-4b23-8365-9b6dde6cde44",
+      "title": "",
+      "fullFile": "cypress/integration/mocha_api/04_deleteGenre.spec.js",
+      "file": "cypress/integration/mocha_api/04_deleteGenre.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b683cfe3-c096-41d4-a3da-e08da968ebc0",
+          "title": "A simple DELETE request against an API to delete a movie genre",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "DELETE -- Successful API DELETE request",
+              "fullTitle": "A simple DELETE request against an API to delete a movie genre DELETE -- Successful API DELETE request",
+              "timedOut": null,
+              "duration": 139,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'DELETE',\n  url: specificEndpoint,\n  failOnStatusCode: false\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.not.be.null;\n});",
+              "err": {},
+              "uuid": "087f7c45-3452-42c7-93ad-6b1baf9cfbd5",
+              "parentUUID": "b683cfe3-c096-41d4-a3da-e08da968ebc0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "087f7c45-3452-42c7-93ad-6b1baf9cfbd5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 139,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d6d82242-18fa-433d-addd-52a82cd5abe1",
+      "title": "",
+      "fullFile": "cypress/integration/mocha_UI/accessibilitytesting .js",
+      "file": "cypress/integration/mocha_UI/accessibilitytesting .js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b8c65de-427b-493a-8351-8a3ef294d4a9",
+          "title": "Accessibility Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify accessibility of the page ",
+              "fullTitle": "Accessibility Testing Verify accessibility of the page ",
+              "timedOut": null,
+              "duration": 1054,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.checkA11y(null, {\n  rules: {\n    \"landmark-one-main\": {\n      enabled: false\n    }\n  }\n});",
+              "err": {
+                "message": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0",
+                "estack": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0\n    at Context.eval (https://demo.nopcommerce.com/__cypress/tests?p=cypress\\support\\index.js:48667:20)",
+                "diff": null
+              },
+              "uuid": "5042164a-9910-42d2-a0cb-91b36f279044",
+              "parentUUID": "0b8c65de-427b-493a-8351-8a3ef294d4a9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify accessibility excluding a specific violation",
+              "fullTitle": "Accessibility Testing Verify accessibility excluding a specific violation",
+              "timedOut": null,
+              "duration": 7446,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.injectAxe();\ncy.customCheckAlly();",
+              "err": {
+                "message": "AssertionError: 4 accessibility violations were detected: expected 4 to equal 0",
+                "estack": "AssertionError: 4 accessibility violations were detected: expected 4 to equal 0\n    at Context.eval (https://demo.nopcommerce.com/__cypress/tests?p=cypress\\support\\index.js:48667:20)",
+                "diff": null
+              },
+              "uuid": "9cba2ae2-59ce-4b41-be3a-26a2d09a513f",
+              "parentUUID": "0b8c65de-427b-493a-8351-8a3ef294d4a9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5042164a-9910-42d2-a0cb-91b36f279044",
+            "9cba2ae2-59ce-4b41-be3a-26a2d09a513f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8500,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4a842078-92b4-486a-b807-24ba36c6f934",
+      "title": "",
+      "fullFile": "cypress/integration/mocha_UI/accountCreation.js",
+      "file": "cypress/integration/mocha_UI/accountCreation.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b6ad6920-189c-48d6-8a0d-f966ab5aae90",
+          "title": "Account creation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register an account",
+              "fullTitle": "Account creation Register an account",
+              "timedOut": null,
+              "duration": 8950,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demo.nopcommerce.com/');\ncy.get('.ico-register').click();\ncy.get('#FirstName').type(fakerator.names.firstName());\ncy.get('#LastName').type(fakerator.names.lastName());\ncy.get('[name=\"DateOfBirthDay\"]').select('26');\ncy.get('[name=\"DateOfBirthMonth\"]').select('April');\ncy.get('[name=\"DateOfBirthYear\"]').select('1990');\ncy.get('#Email').type(fakerator.internet.email());\nconst pass = fakerator.internet.password(8);\ncy.get('#Password').type(pass);\ncy.get('#ConfirmPassword').type(pass);\ncy.get('#register-button').click();\ncy.get('.result').should('have.text', 'Your registration completed');",
+              "err": {},
+              "uuid": "adc7b9bb-be1c-42b3-a4f4-d3b9ee0dae92",
+              "parentUUID": "b6ad6920-189c-48d6-8a0d-f966ab5aae90",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "adc7b9bb-be1c-42b3-a4f4-d3b9ee0dae92"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8950,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b904424f-bbab-4df9-b5a7-cf31ebd354fb",
+      "title": "",
+      "fullFile": "cypress/integration/mocha_UI/canadalifePOC.js",
+      "file": "cypress/integration/mocha_UI/canadalifePOC.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "66bb2a75-bbf6-43b8-ab0d-1fdc055dd287",
+          "title": "Account creation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register an account",
+              "fullTitle": "Account creation Register an account",
+              "timedOut": null,
+              "duration": 35035,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://class.canadalife.co.uk/');\ncy.get('#username').type(\"aggvikas11\");\ncy.get('#password').type(\"temppassword1\");\ncy.get('.col-md-8 > .btn').click();\ncy.get(':nth-child(1) > .button > .h1').click();\ncy.get('[title=\"Online group insurance quotations\"] > h3 > strong').click();\ncy.get('#ctl00_Main_NewQuoteButton').click();\ncy.get('#ctl00_Main_txtYears').type(\"2\");\ncy.get('#ctl00_Main_CompanyNumberTextBox').type(\"1234566\");\ncy.get('#ctl00_Main_cmbIndustryType').select(\"IT\");\ncy.get('[type=\"radio\"]').eq(4).click({\n  force: true\n});\ncy.get('#ctl00_FooterContinueButton').click();\ncy.get('#ctl00_Main_EmployerNameTextbox').type(\"2\");\ncy.get('#ctl00_Main_PostCodeTextbox').type(\"Sl1 9AW\");\ncy.get('#ctl00_Main_FindAddressButton').click();\ncy.get('#ctl00_Main_SaveAddressButton').click();\ncy.get('#ctl00_Main_UKEmployeesTextbox').type(\"2\");\ncy.get('#ctl00_Main_eligibleEmployeesTextbox').type(\"2\");\ncy.get('#ctl00_Main_EffectiveDateTextbox').click();\ncy.get('tbody > :nth-child(5) > :nth-child(5)').click();\ncy.get('#ctl00_Main_chkReadGIP').click();\ncy.get('#ctl00_Main_chkReadGCI').click();\ncy.get('#ctl00_Main_chkReadGLA').click();\ncy.get('#ctl00_FooterContinueButton').click();\ncy.get('#ctl00_Main_drpEligibilityType').select(\"All - pensionable and non-pensionable employees\");\ncy.get('#ctl00_Main_drpBenefitDifferent').select(\"Yes\");\ncy.get('#ctl00_Main_drpSalaryDefinitionDifference').select(\"Yes\");\ncy.get('#ctl00_Main_drpBenefitDifferent').select(\"Yes\");\ncy.get('#ctl00_FooterContinueButton').click();\ncy.get('#ctl00_Main_UploadRadioButton').click();\ncy.get('#ctl00_Main_FileUploadButton').click();\ncy.get('#ctl00_Main_FileUploadButton').attachFile('sample.xlsx');\ncy.get('#ctl00_Main_LoadButton').click();",
+              "err": {},
+              "uuid": "8576768c-a57f-4c9b-877b-954453521093",
+              "parentUUID": "66bb2a75-bbf6-43b8-ab0d-1fdc055dd287",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8576768c-a57f-4c9b-877b-954453521093"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 35035,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "03c0777f-1a80-47fb-a0db-ad31854d0102",
+      "title": "",
+      "fullFile": "cypress/integration/mocha_UI/orderDress.js",
+      "file": "cypress/integration/mocha_UI/orderDress.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eabb3fa1-1631-456d-a649-14ba1cb696c7",
+          "title": "my first test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My Firt test case ",
+              "fullTitle": "my first test My Firt test case ",
+              "timedOut": null,
+              "duration": 26350,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://automationpractice.com/index.php');\ncy.get('.login').click();\ncy.get('#email').type(\"ananddharmar.d@gmail.com\");\ncy.get('#passwd').type(\"Quali@123\");\ncy.get('#SubmitLogin > span').click();\ncy.get('.sf-menu > :nth-child(1) > [href=\"http://automationpractice.com/index.php?id_category=3&controller=category\"]').click(); //Visible is added to make sure it counts only visible elements make it 8 to test the other scenario\ncy.get('div[class=\"button-container\"]:visible').should('have.length', 7); //Trying to minimize the scope of finding the element by finding the block rather than finding in the entire page\n//Parent child combination\ncy.get('.product_list.grid.row').find('div[class=\"button-container\"]').should('have.length', 7);\ncy.get('.product_list.grid.row').find('div[class=\"button-container\"]').eq(3).contains('Add to cart').click();\ncy.get(':nth-child(1) > .product-container > .right-block > .button-container > .ajax_add_to_cart_button > span').click();\ncy.get('.button-container > .button-medium > span').click();\ncy.get('.cart_navigation > .button > span').click();\ncy.get('.cart_navigation > .button > span').click();\ncy.get('#cgv').click();\ncy.get('.cart_navigation > .button > span').click();\ncy.get('.bankwire').click();\ncy.get('#cart_navigation > .button > span').click();\ncy.get('.page-heading').should('have.text', 'Order confirmation');",
+              "err": {},
+              "uuid": "d76c4d94-22b1-4fa0-8fda-6e099f55c260",
+              "parentUUID": "eabb3fa1-1631-456d-a649-14ba1cb696c7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d76c4d94-22b1-4fa0-8fda-6e099f55c260"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26350,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5bcd71f2-fb84-4a92-b22c-7a3d01a6d775",
+      "title": "",
+      "fullFile": "cypress/integration/mocha_api/01_getGenre.spec.js",
+      "file": "cypress/integration/mocha_api/01_getGenre.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "00267d9b-7dac-48ed-9ee1-37942498d2e4",
+          "title": "A simple GET request against an API which provides a list of movie genres",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET -- Successful GET request",
+              "fullTitle": "A simple GET request against an API which provides a list of movie genres GET -- Successful GET request",
+              "timedOut": null,
+              "duration": 405,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', endpoint).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.not.be.null;\n});",
+              "err": {},
+              "uuid": "500a411b-9ec1-48b6-989f-5ee0ca510f4d",
+              "parentUUID": "00267d9b-7dac-48ed-9ee1-37942498d2e4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET -- API returns a JSON Response",
+              "fullTitle": "A simple GET request against an API which provides a list of movie genres GET -- API returns a JSON Response",
+              "timedOut": null,
+              "duration": 68,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', endpoint).its('headers').its('content-type').should('include', 'application/json');",
+              "err": {},
+              "uuid": "a1e34f9e-e19f-4c4d-a5bb-6367476a2ea0",
+              "parentUUID": "00267d9b-7dac-48ed-9ee1-37942498d2e4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET -- API loads all the default items on the first run",
+              "fullTitle": "A simple GET request against an API which provides a list of movie genres GET -- API loads all the default items on the first run",
+              "timedOut": null,
+              "duration": 4541,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "getItems().should('deep.eq', initialItems);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected [ Array(8) ] to deeply equal [ Array(9) ]",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected [ Array(8) ] to deeply equal [ Array(9) ]\n    at Context.eval (https://moviegenresapi.herokuapp.com/__cypress/tests?p=cypress\\integration\\mocha_api\\01_getGenre.spec.js:143:16)",
+                "diff": "   { id: 4, name: 'Fantasy' },\n   { id: 5, name: 'Horror' },\n   { id: 6, name: 'Mystery' },\n   { id: 7, name: 'Romance' },\n-   { id: 8, name: 'Thriller' } ]\n+   { id: 8, name: 'Thriller' },\n+   { id: 9, name: 'Western' } ]\n"
+              },
+              "uuid": "2edee88c-ea3e-44a9-b0c9-eef4b7b91b74",
+              "parentUUID": "00267d9b-7dac-48ed-9ee1-37942498d2e4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET -- API loads 9 items present within the default setup before any insertions and deletions",
+              "fullTitle": "A simple GET request against an API which provides a list of movie genres GET -- API loads 9 items present within the default setup before any insertions and deletions",
+              "timedOut": null,
+              "duration": 4645,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "getItems().should('have.length', 9);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected [ Array(8) ] to have a length of 9 but got 8",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected [ Array(8) ] to have a length of 9 but got 8\n    at Context.eval (https://moviegenresapi.herokuapp.com/__cypress/tests?p=cypress\\integration\\mocha_api\\01_getGenre.spec.js:146:16)",
+                "diff": "- 8\n+ 9\n"
+              },
+              "uuid": "9b93596f-e43a-4ed1-b31b-3b5771924901",
+              "parentUUID": "00267d9b-7dac-48ed-9ee1-37942498d2e4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET -- API loads a specific genre based on the id provided",
+              "fullTitle": "A simple GET request against an API which provides a list of movie genres GET -- API loads a specific genre based on the id provided",
+              "timedOut": null,
+              "duration": 127,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', specificValue).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.not.be.null;\n  expect(response.body).property('id').to.equal(1);\n});",
+              "err": {},
+              "uuid": "e904c970-23ef-44b0-b3d6-354cfd9569c9",
+              "parentUUID": "00267d9b-7dac-48ed-9ee1-37942498d2e4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "500a411b-9ec1-48b6-989f-5ee0ca510f4d",
+            "a1e34f9e-e19f-4c4d-a5bb-6367476a2ea0",
+            "e904c970-23ef-44b0-b3d6-354cfd9569c9"
+          ],
+          "failures": [
+            "2edee88c-ea3e-44a9-b0c9-eef4b7b91b74",
+            "9b93596f-e43a-4ed1-b31b-3b5771924901"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9786,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "baseUrl": "https://moviegenresapi.herokuapp.com/api/",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "retries": {
+    "runMode": 3,
+    "openMode": 2
+  },
+
+  "CucumberConfig": {
+    "ignoreTestFiles": "*.js",
+    "testFiles": "**/*.feature",
+    "chromeWebSecurity": false,
+    "projectId": "ud6tod"
+  },
+  "responseTimeOut": 90000,
+  "requestTimeout": 90000,
+  "projectId": "QualiTest_JavaScript"
+}

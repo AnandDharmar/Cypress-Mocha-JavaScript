@@ -1,0 +1,9 @@
+{
+  "postRequest": {
+      "name": "Romantic Comedy"     
+  },
+
+  "putRequest": {
+    "name": "Heroic Bloodshed"
+  }
+}
